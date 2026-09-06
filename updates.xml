@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>Ponto Mega JoomGallery Fallback Router Fix</name>
+        <description>Joomla system plugin to fix bogus SEF router fallback in JoomGallery and restore native redirects / 404 behavior.</description>
+        <element>pontomega_joomgallery_fallback_router_fix</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <version>1.0.0</version>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/uzielweb/plg_system_pontomega_joomgallery_fallback_router_fix/releases/download/v1.0.0/plg_system_pontomega_joomgallery_fallback_router_fix_v1.0.0.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Ponto Mega</maintainer>
+        <maintainerurl>https://www.pontomega.com.br</maintainerurl>
+        <targetplatform name="joomla" version=".*" />
+    </update>
+</updates>

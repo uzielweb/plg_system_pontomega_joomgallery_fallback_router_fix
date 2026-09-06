@@ -48,4 +48,7 @@
             </fieldset>
         </fields>
     </config>
+    <updateservers>
+        <server type="extension" priority="1" name="Ponto Mega JoomGallery Fallback Router Fix">https://raw.githubusercontent.com/uzielweb/plg_system_pontomega_joomgallery_fallback_router_fix/main/updates.xml</server>
+    </updateservers>
 </extension>
