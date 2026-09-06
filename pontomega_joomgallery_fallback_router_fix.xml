@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade">
+    <name>PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX</name>
+    <author>Ponto Mega</author>
+    <creationDate>2026-09-06</creationDate>
+    <copyright>(C) 2026 Ponto Mega. Todos os direitos reservados.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>contato@pontomega.com.br</authorEmail>
+    <authorUrl>https://www.pontomega.com.br</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_XML_DESCRIPTION</description>
+    <files>
+        <filename plugin="pontomega_joomgallery_fallback_router_fix">pontomega_joomgallery_fallback_router_fix.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/plg_system_pontomega_joomgallery_fallback_router_fix.ini</language>
+        <language tag="en-GB">en-GB/plg_system_pontomega_joomgallery_fallback_router_fix.sys.ini</language>
+        <language tag="pt-BR">pt-BR/plg_system_pontomega_joomgallery_fallback_router_fix.ini</language>
+        <language tag="pt-BR">pt-BR/plg_system_pontomega_joomgallery_fallback_router_fix.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="check_redirects"
+                    type="radio"
+                    layout="joomla.form.field.radio.switcher"
+                    label="PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_CHECK_REDIRECTS_LABEL"
+                    description="PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_CHECK_REDIRECTS_DESC"
+                    default="1"
+                    filter="integer"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="redirect_code"
+                    type="list"
+                    label="PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_REDIRECT_CODE_LABEL"
+                    description="PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_REDIRECT_CODE_DESC"
+                    default="301"
+                    showon="check_redirects:1"
+                >
+                    <option value="301">PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_REDIRECT_301</option>
+                    <option value="302">PLG_SYSTEM_PONTOMEGA_JOOMGALLERY_FALLBACK_ROUTER_FIX_REDIRECT_302</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
